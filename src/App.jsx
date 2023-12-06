@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div>App</div>
+      <h1>Shopping Cart</h1>
     </>
   );
 }
