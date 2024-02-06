@@ -1,16 +1,20 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
+import useFetchProduct from '../hooks/useFetchProduct';
 
 const Shop = () => {
-  const [productData, setProductData] = useState(null);
+  // const [productData, setProductData] = useState(null);
 
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products?limit=3')
-      .then((res) => res.json())
-      .then((json) => {
-        setProductData(json);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://fakestoreapi.com/products?limit=3')
+  //     .then((res) => res.json())
+  //     .then((json) => {
+  //       setProductData(json);
+  //     });
+  // }, []);
+
+  const productData = useFetchProduct();
+
   return (
     <>
       <h2>shop page</h2>
