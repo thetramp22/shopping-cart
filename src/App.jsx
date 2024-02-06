@@ -1,7 +1,16 @@
+import Navbar from './components/Navbar';
+import { Outlet } from 'react-router-dom';
+
 function App() {
   return (
     <>
-      <h1>Shopping Cart</h1>
+      <header>
+        <h1>Shopping Cart</h1>
+        <Navbar />
+      </header>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
